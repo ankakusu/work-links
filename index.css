@@ -1,27 +1,70 @@
-h2 > span {
-    padding: .5rem 1rem;
-    background-color: #0c4646;
-    color: white;
+header {
+  padding: .2rem .6rem;
+  margin-bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+  background-color: #0c4646;
+  width: auto;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-h3 > span {
-    border-bottom: 1px solid;
-    font-style: italic;
+h2 {
+  color: white;
+  margin: 0;
+  font-size: large;
+}
+
+h3 {
+  border-bottom: 1px solid;
+  font-style: italic;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 0 0 0 1rem;
 }
 
 .list:not(:last-child) {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .list-inner:not(:last-child) {
-    display: inline-block;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.toggle-icon {
+  display: inline-block;
+  margin: 0 .5rem 0 0;
+  font-size: 2rem;
+  color: white;
+  width: 20px;
+}
+
+article {
+  margin-bottom: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.search-block {
+  border: 1px solid grey;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.search-block input,
+.search-block label {
+  font-size: larger;
 }

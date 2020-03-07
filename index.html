@@ -2,12 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <link rel="stylesheet" href="index.css">
+  <title>Work links</title>
 </head>
 <body>
+<h1>Work Links</h1>
+<section>
+  <div class="search-block">
+    <label for="search">Search</label>
+    <input id="search" type="text" oninput="searchLinks(this.value)">
+  </div>
+</section>
+<section>
+  <article>
+    <header onclick="toggleItem('#list-group-1', this)">
+      <i class="toggle-icon">-</i>
+      <h2>List 1</h2>
+    </header>
+    <ul id="list-group-1">
+      <li data-type="list-item">
+        <a href="#1-1">My Item</a>
+      </li>
+    </ul>
+  </article>
+  <article>
+    <header onclick="toggleItem('#list-group-2', this)">
+      <i class="toggle-icon">-</i>
+      <h2>List 2</h2>
+    </header>
+    <ul id="list-group-2">
+      <li data-type="list-item">
+        <a href="#2-1">Some Item</a>
+      </li>
+    </ul>
+  </article>
+</section>
+<script src="index.js"></script>
 
-<script type="module" src="index.ts"></script>
-
-<script type="module" src="components/collapsable-list/collapsable-list.js"></script>
 </body>
 </html>
