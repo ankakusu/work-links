@@ -14,3 +14,8 @@ functionality where you can filter your links.
 
 This project aimed to work without any server and just a `file:///path/to/file` reference would be more than enough
 to consume it in the browser.
+
+# TODOs
+
+- Convert browser bookmarks to this format
+- Use Lit-Html to generate html
